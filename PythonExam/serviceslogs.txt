@@ -1,0 +1,46 @@
+任務
+====
+
+處理 JSON 格式的 log 檔，針對各服務計算不同嚴重等級 log 次數
+
+
+task 1. 針對每個服務 (服務名稱紀錄在 "service_name")，計算各種嚴重等級 (嚴重等級紀錄在 "severity") log 發生的次數。
+
+
+task 2. 建立 function，能夠指定待處理的 log 檔名，輸出所有服務各種嚴重等級次數
+        ----------------------------以下為輸出內容----------------------------
+        pauca ERROR: 26/ INFO: 23/ NOTICE:  0/ WARNING:  2
+        myca  ERROR:  0/ INFO:  3/ NOTICE:  0/ WARNING:  0
+        wt    ERROR: 36/ INFO: 53/ NOTICE:  1/ WARNING:  0
+
+
+task 3. 強化先前 function，除能夠指定待處理的 log 檔名，預設情況下能夠輸出所有
+        服務各種嚴重等級次數，亦能夠僅輸出指定服務的各種嚴重等級次數
+        ----------------------------以下為輸出內容----------------------------
+        wt INFO: 53/ ERROR: 36/ NOTICE: 1
+
+
+note 1. 可使用 Python 內建套件 (如 json)；禁用第三方套件 (如 pandas)
+note 2. 服務名稱與嚴重等級不得寫死
+note 3. 評分時將以同規格的其他服務 log 檔驗證，須注意輸出數據正確性與輸出對齊原則
+note 4. 禁止 vibe coding，違者總分 0 分
+
+
+
+評分標準
+========
+
+正確運作                      60% (task 1: 30%, task 2: 20%, task 3: 10%)
+程式邏輯與效率                30%
+coding style                  10%
+docstring 描述解題邏輯與心得 +20%
+
+
+繳交方式
+========
+
+by email
+時間: 2025/08/06-23:59:59 前，逾時總分 0 分
+主旨: GAE254 Python 測驗 03 王大同 
+內容: as title
+夾檔: GAE254_03_王大同.py or GAE254_03_王大同.ipynb
